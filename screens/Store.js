@@ -112,7 +112,7 @@ export default class NoteScreen extends Component {
 
                 <Text style={styles.productPrice}> {item.address} </Text>
                 <TouchableOpacity style={styles.buyProduct} onPress = {() => this.buyProduct(item)}>
-                  <Text style={{color: 'white', fontWeight: 'bold', fontSize: 14}}> Show Products </Text>
+                  <Text style={{color: 'white', fontWeight: 'bold', fontSize: 14}}> Show Flyers </Text>
                 </TouchableOpacity>
               </View>
           </View>
@@ -137,7 +137,7 @@ export default class NoteScreen extends Component {
                 <Text style={styles.productName}> {item.productName} </Text>
                 <Text style={styles.productPrice}> {item.address} </Text>
                 <TouchableOpacity style={styles.buyProduct} onPress = {() => this.buyProduct(item)}>
-                  <Text style={{color: 'white', fontWeight: 'bold', fontSize: 14}}> Show Products </Text>
+                  <Text style={{color: 'white', fontWeight: 'bold', fontSize: 14}}> Show Flyers </Text>
                 </TouchableOpacity>
               </View>
               <View style={styles.productImage}>

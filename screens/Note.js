@@ -94,16 +94,11 @@ export default class NoteScreen extends Component {
           onPress={onPress}
         >
           <View style={styles.item}>
-              <View style={styles.productImage}>
-                <Image source={icon} style={{ width: '100%', height: '100%' }} /> 
-              </View>
-              <View style={styles.productDetails}>
-                <Text style={styles.productName}> {item.productName} </Text>
 
-                <Text style={styles.productPrice}> Price: {item.price} {item.currency} </Text>
-                <Text style={styles.productPrice}> Store Name: {item.address} </Text>
+              <View style={styles.productDetails}>
+
                 <TouchableOpacity style={styles.buyProduct} onPress = {() => this.buyProduct(item)}>
-                  <Text style = {{color: 'white', fontSize: 17, fontWeight: 'bold'}}> Buy Product </Text>
+                  <Text style = {{color: 'white', fontSize: 17, fontWeight: 'bold'}}> Flyers </Text>
                 </TouchableOpacity>
               </View>
           </View>

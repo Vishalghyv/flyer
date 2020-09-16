@@ -22,16 +22,15 @@ export default class HomeScreen extends Component {
     super(props);
     this.state = { numColumns: 3};
     this.state.Products = [
-      {key:'Nuts'},
-      {key:'Almond'},
-      {key:'Small Products'},
-      {key:'Detergent'},
-      {key:'Surf Excel'},
-      {key:'Other Products'},
+      {key:'Super Market'},
+      {key:'Tech Stores'},
       {key:'More Other Products'},
-      {key:'Products'},
-      {key:'Random'},
+      {key:'Grocery Store'},
+      {key:'Luxury Cars'},
+      {key:'Other Products'},
       {key:'Other'},
+      {key:'Random'},
+      {key:'E-Commerce'},
     ];
     this.SearchItem = this.SearchItem.bind(this);
     this.searchProduct = this.searchProduct.bind(this);
@@ -68,7 +67,7 @@ export default class HomeScreen extends Component {
       <View style={styles.searchBar}>
         <View style={styles.bar}>
           <TextInput
-            placeholder="Search with Product"
+            placeholder="Search with Name"
             style={{ fontSize: 18, width: '100%', height: 50, padding: 10, backgroundColor: 'white' }}
             onChangeText = {(value) => searchProduct(value)}
           />
